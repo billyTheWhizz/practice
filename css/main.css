@@ -9,10 +9,12 @@ li {
   margin: 0; }
 
 h1 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 45px;
   margin-bottom: 10px; }
 
 h2 {
+  color: #979797;
   font-size: 30px;
   margin-top: 20px;
   margin-bottom: 10px; }
@@ -20,8 +22,8 @@ h2 {
 header {
   float: left;
   width: 100%;
-  background-color: #d8d8d8;
-  border-bottom: 3px solid #646464; }
+  background-color: white;
+  border-bottom: 1px solid #646464; }
 
 nav {
   background-color: #646464;
@@ -46,10 +48,10 @@ nav {
   overflow: auto; }
 
 .php {
-  background-image: linear-gradient(to top, #A892BF 75%, #CC344D 120%); }
+  background-image: linear-gradient(to top, #C2B2D2 80%, #F5D7DC 120%); }
 
 .ruby {
-  background-image: linear-gradient(#FC647D 0%, #CC344D 80%, #A892BF 125%); }
+  background-image: linear-gradient(#FD96A7 0%, #F5D7DC 80%, #C2B2D2 125%); }
 
 img {
   max-width: 100%; }
