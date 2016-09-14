@@ -1,6 +1,6 @@
 $header-background-color: white;
 $nav-background-color: #646464;
-$ruby-dark-background: #FD96A7;
+$ruby-dark-background: #FEBEC9;
 $ruby-light-background: #F5D7DC;
 $php-background: #C2B2D2 ;
 $js-background: #026e00;
@@ -18,7 +18,7 @@ li {
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: sans-serif;
   font-size: 45px;
   margin-bottom: 10px;
 }
@@ -138,4 +138,7 @@ footer {
       width: 30%;
     }
   }
+}
+.no-scroll {
+    overflow: hidden;
 }

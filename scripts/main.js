@@ -17,9 +17,11 @@ $(".gallery a").click(function(event){
   $image.attr("src", href);
   var captionText = $(this).children("img").attr("alt");
   $caption.text(captionText);
+  $("body").addClass("no-scroll");
   $overlay.show();
 });
 
 $overlay.click(function(){
   $overlay.hide();
+  $("body").removeClass("no-scroll");
 });
