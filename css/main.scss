@@ -1,9 +1,11 @@
-$header-background-color: white;
+
 $nav-background-color: #646464;
 $ruby-dark-background: #FEBEC9;
 $ruby-light-background: #F5D7DC;
 $php-background: #C2B2D2 ;
 $js-background: #026e00;
+$header-background-color: white;
+//lighten(black, 40%);
 
 a {
   text-decoration: none;
@@ -18,23 +20,31 @@ li {
 }
 
 h1 {
+  color: black;
   font-family: sans-serif;
   font-size: 45px;
   margin-bottom: 10px;
+  margin-left: 10%;
 }
 
 h2 {
   color: lighten($nav-background-color, 20%);
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 20px;
   margin-bottom: 10px;
+  margin-left: 10%;
+  text-decoration: underline;
+}
+h3 {
+
+  font-size: 25px;
 }
 
 header {
   float: left;
   width: 100%;
   background-color: $header-background-color;
-  border-bottom: 1px solid $nav-background-color;
+  border-bottom: 2px solid $nav-background-color;
 }
 nav {
   background-color: $nav-background-color;
@@ -61,14 +71,24 @@ nav {
 
 .wrapper {
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 5% 50px 5%;
   overflow: auto;
 }
 .php {
-  background-image: linear-gradient(to top, $php-background 80%, $ruby-light-background 120%);
+  background: linear-gradient(to top, lighten($php-background, 10%) 80%, $ruby-light-background 120%);
+  h3{
+    background-image: linear-gradient(to top, $php-background 80%, $ruby-light-background 120%);
+    padding-left: 40px;
+    text-shadow: center;
+  }
 }
 .ruby {
-  background-image: linear-gradient($ruby-dark-background 0%, $ruby-light-background 80%, $php-background 125%);;
+  background: linear-gradient(lighten($ruby-dark-background, 10%) 80%, $php-background 120%);
+  h3{
+    background-image: linear-gradient($ruby-dark-background 0%, $ruby-light-background 100%);
+    padding-left: 40px;
+    text-shadow: center;
+  }
 }
 
 img {
@@ -79,12 +99,14 @@ img {
   padding: 0;
   text-align: center;
   li {
+    background-color: white;
     padding: 5%;
     color: #ed35c7;
     @media screen and (min-width: 480px ){
       width: 32%;
       padding: 3%;
       display: inline-block;
+      border: 2px black solid;
     }
     @media screen and (min-width: 820px){
       width: 18%;
