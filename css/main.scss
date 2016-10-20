@@ -1,6 +1,7 @@
 
-$nav-background-color: #646464;
+$nav-background-color: white;
 
+//GENERAL
 a {
   text-decoration: none;
 }
@@ -16,7 +17,7 @@ li {
 h1 {
   color: black;
   font-family: sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -32,35 +33,87 @@ h2 {
 h3 {
   font-size: 25px;
 }
+nav {
+  padding-bottom: 10px;
+}
 
+// HEADER + NAV
 header {
-  text-align: center;
   float: left;
   width: 100%;
   border-bottom: 2px solid $nav-background-color;
 }
 nav {
+  position: fixed;
+  width: 100%;
   background-color: $nav-background-color;
   padding-top: 5px;
   border-bottom: 2px solid black;
-  border-top: 2px solid black;
   ul {
-    margin: 0 10px;
     padding: 0;
   }
   li {
+    padding-right: 20px;
     display: inline-block;
-    color: white;
-
   }
   a, a:visited {
-    color: white;
-    font-size: 20px;
+    color: black;
+    font-size: 18px;
   }
   .right{
     float: right;
   }
 }
+#drop-down-icon{
+  display: inline;;
+  font-size: 25px;
+  margin-top: 13px;
+  @media screen and (min-width: 480px ){
+    display: none;
+  }
+}
+.nav {
+  margin-left: 10%;
+}
+.links{
+  display:none;
+  position: absolute;
+  top:81px;
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  li{
+      display: block;
+      float: none;
+      padding: 4px 4px 0 2px;
+    }
+  @media screen and (min-width: 480px ){
+    margin-left: 10%;
+    display: inline;
+    position: relative;
+    text-align: inherit;
+    top: auto;
+    li {
+      display:inherit;
+    }
+  }
+}
+
+.parallax{
+  background-image: url('../img/plastic.jpg');
+  height: 250px;
+  background-attachment: fixed;
+  background-position:center;;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sub-title{
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+//CONTENT
 
 .wrapper {
   margin: 0 auto;
@@ -107,6 +160,7 @@ footer {
   clear: both;
 }
 
+// overlay
 #overlay {
   width: 100%;
   height: 100%;
@@ -117,7 +171,7 @@ footer {
   text-align: center;
   background: rgba(0,0,0,0.95);
   @media screen and (min-width: 480px ){
-    background: rgba(0,0,0,0.7)
+    background: rgba(0,0,0,0.7);
   }
   @media screen and (min-width: 820px){
 
@@ -134,7 +188,7 @@ footer {
       width: 30%;
     }
   }
-
+}
 .no-scroll {
     overflow: hidden;
 }

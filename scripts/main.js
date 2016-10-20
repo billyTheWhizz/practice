@@ -1,3 +1,16 @@
+//nav
+$('#drop-down-icon').click(function(){
+  $('.links').slideToggle();
+});
+
+$(window).resize(function(){
+	if(window.innerWidth >= 480) {
+		$(".links").removeAttr("style");
+	}
+})
+
+//lightbox
+
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
 var $background = $('<div id="background"></div>')

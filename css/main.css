@@ -1,42 +1,163 @@
-/*
-Error: Invalid CSS after "}": expected "}", was ""
-        on line 141 of ./css/main.scss
+a {
+  text-decoration: none; }
 
-136:   }
-137: 
-138: .no-scroll {
-139:     overflow: hidden;
-140: }
+li {
+  list-style-type: none; }
 
-Backtrace:
-./css/main.scss:141
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/scss/parser.rb:658:in `block'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Users/markhill/.rvm/gems/ruby-2.2.3/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 141 of ./css/main.scss\A \A 136:   }\A 137: \A 138: .no-scroll {\A 139:     overflow: hidden;\A 140: }"; }
+#logo {
+  text-align: center;
+  margin: 0; }
+
+h1 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+h2 {
+  color: white;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline; }
+
+h3 {
+  font-size: 25px; }
+
+nav {
+  padding-bottom: 10px; }
+
+header {
+  float: left;
+  width: 100%;
+  border-bottom: 2px solid white; }
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  padding-top: 5px;
+  border-bottom: 2px solid black; }
+  nav ul {
+    padding: 0; }
+  nav li {
+    padding-right: 20px;
+    display: inline-block; }
+  nav a, nav a:visited {
+    color: black;
+    font-size: 18px; }
+  nav .right {
+    float: right; }
+
+#drop-down-icon {
+  display: inline;
+  font-size: 25px;
+  margin-top: 13px; }
+  @media screen and (min-width: 480px) {
+    #drop-down-icon {
+      display: none; } }
+
+.nav {
+  margin-left: 10%; }
+
+.links {
+  display: none;
+  position: absolute;
+  top: 81px;
+  text-align: center;
+  background-color: white;
+  width: 100%; }
+  .links li {
+    display: block;
+    float: none;
+    padding: 4px 4px 0 2px; }
+  @media screen and (min-width: 480px) {
+    .links {
+      margin-left: 10%;
+      display: inline;
+      position: relative;
+      text-align: inherit;
+      top: auto; }
+      .links li {
+        display: inherit; } }
+
+.parallax {
+  background-image: url("../img/plastic.jpg");
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.sub-title {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding-top: 150px; }
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 5% 50px 5%;
+  overflow: auto; }
+
+.php h3 {
+  padding-left: 40px;
+  text-shadow: center; }
+
+.ruby h3 {
+  padding-left: 40px;
+  text-shadow: center; }
+
+img {
+  max-width: 100%; }
+
+.gallery {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  .gallery li {
+    background-color: white;
+    padding: 5%;
+    color: #ed35c7; }
+    @media screen and (min-width: 480px) {
+      .gallery li {
+        width: 32%;
+        padding: 3%;
+        display: inline-block;
+        border: 2px black solid; } }
+    @media screen and (min-width: 820px) {
+      .gallery li {
+        width: 18%; } }
+
+footer {
+  clear: both; }
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.95); }
+  @media screen and (min-width: 480px) {
+    #overlay {
+      background: rgba(0, 0, 0, 0.7); } }
+  #overlay img {
+    margin-top: 40%;
+    width: 70%; }
+    @media screen and (min-width: 480px) {
+      #overlay img {
+        margin-top: 20%;
+        width: 50%; } }
+    @media screen and (min-width: 820px) {
+      #overlay img {
+        margin-top: 10%;
+        width: 30%; } }
+
+.no-scroll {
+  overflow: hidden; }
+
+/*# sourceMappingURL=main.css.map */
