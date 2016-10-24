@@ -9,6 +9,19 @@ $(window).resize(function(){
 	}
 })
 
+//parallex
+$(document).ready(function(){
+	$(window).bind('scroll',function(e){
+   		parallaxScroll();
+   	});
+
+   	function parallaxScroll(){
+   		var scrolledY = $(window).scrollTop();
+		$('.sub-title').css('top',''+((scrolledY*0.5))+'px');
+   	}
+
+});
+
 //lightbox
 
 var $overlay = $('<div id="overlay"></div>');

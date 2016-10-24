@@ -1,3 +1,14 @@
+*[id]:before {
+  display: block;
+  content: " ";
+  visibility: hidden;
+  margin-top: -260px;
+  height: 260px; }
+  @media screen and (min-width: 480px) {
+    *[id]:before {
+      margin-top: -130px;
+      height: 130px; } }
+
 a {
   text-decoration: none; }
 
@@ -30,17 +41,18 @@ nav {
 
 header {
   float: left;
-  width: 100%;
-  border-bottom: 2px solid white; }
+  width: 100%; }
 
 nav {
+  z-index: 1;
   position: fixed;
   width: 100%;
   background-color: white;
   padding-top: 5px;
-  border-bottom: 2px solid black; }
+  border-bottom: 2px solid #DFDFDF; }
   nav ul {
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 0; }
   nav li {
     padding-right: 20px;
     display: inline-block; }
@@ -52,6 +64,8 @@ nav {
 
 #drop-down-icon {
   display: inline;
+  float: right;
+  margin-right: 5px;
   font-size: 25px;
   margin-top: 13px; }
   @media screen and (min-width: 480px) {
@@ -62,52 +76,65 @@ nav {
   margin-left: 10%; }
 
 .links {
+  border-top: 2px solid grey;
   display: none;
   position: absolute;
-  top: 81px;
+  top: 97px;
   text-align: center;
   background-color: white;
   width: 100%; }
   .links li {
     display: block;
     float: none;
-    padding: 4px 4px 0 2px; }
+    padding: 8px 4px 8px 4px;
+    border-bottom: 2px solid grey; }
   @media screen and (min-width: 480px) {
     .links {
       margin-left: 10%;
       display: inline;
       position: relative;
       text-align: inherit;
-      top: auto; }
+      top: auto;
+      border: none; }
       .links li {
-        display: inherit; } }
+        display: inherit;
+        border: none; } }
 
 .parallax {
-  background-image: url("../img/plastic.jpg");
-  height: 250px;
+  z-index: -1;
+  background-image: url("../img/pattern2.png");
+  text-align: center;
+  height: 450px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .sub-title {
-  font-size: 25px;
+  position: absolute;
+  font-size: 30px;
   color: white;
-  text-align: center;
-  padding-top: 150px; }
+  background-color: black;
+  margin-top: 260px;
+  margin-left: 1%;
+  padding: 10px; }
+  @media screen and (min-width: 480px) {
+    .sub-title {
+      margin-left: 15%; } }
+  @media screen and (min-width: 670px) {
+    .sub-title {
+      margin-left: 25%; } }
 
 .wrapper {
+  position: relative;
   margin: 0 auto;
   padding: 0 5% 50px 5%;
-  overflow: auto; }
-
-.php h3 {
-  padding-left: 40px;
-  text-shadow: center; }
-
-.ruby h3 {
-  padding-left: 40px;
-  text-shadow: center; }
+  overflow: auto;
+  background-color: white; }
+  .wrapper h3 {
+    padding-left: 40px;
+    font-size: 30px;
+    color: grey; }
 
 img {
   max-width: 100%; }
