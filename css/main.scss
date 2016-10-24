@@ -123,25 +123,32 @@ nav {
   z-index: -1;
   background-image: url('../img/pattern2.png');
   text-align: center;
-  height: 450px;
+  height: 250px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (min-width: 480px ){
+    height: 450px;
+  }
 }
 .sub-title{
   position: absolute;
   font-size: 30px;
   color: white;
   background-color: black;
-  margin-top: 260px;
+  margin-top: 150px;
   margin-left: 1%;
   padding: 10px;
   @media screen and (min-width: 480px ){
     margin-left: 15%;
+    margin-top: 260px;
   }
   @media screen and (min-width: 670px ){
     margin-left: 25%;
+  }
+  @media screen and (min-width: 820px ){
+    margin-left: 35%;
   }
 }
 //CONTENT
