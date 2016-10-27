@@ -63,6 +63,11 @@ nav {
     float: right; }
 
 #drop-down-icon {
+  cursor: pointer;
+  width: 50px;
+  padding: 1px;
+  border: solid grey 1px;
+  background-color: white;
   display: inline;
   float: right;
   margin-right: 5px;
@@ -101,7 +106,7 @@ nav {
         border: none; } }
 
 .mob-header {
-  background-image: url("../img/pattern2.png");
+  background-image: url("../img/pattern3.png");
   text-align: center;
   height: 250px;
   background-position: center;
@@ -122,7 +127,7 @@ nav {
 .parallax {
   display: none;
   z-index: -1;
-  background-image: url("../img/pattern2.png");
+  background-image: url("../img/pattern3.png");
   text-align: center;
   height: 250px;
   background-attachment: fixed;
