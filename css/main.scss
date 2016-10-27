@@ -118,8 +118,27 @@ nav {
     }
   }
 }
-
+.mob-header{
+  background-image: url('../img/pattern2.png');
+  text-align: center;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (min-width: 480px ){
+    display: none;
+  }
+}
+.mob-sub-title{
+  display:inline-block;
+  font-size: 25px;
+  color: white;
+  background-color: black;
+  padding: 5px 20px;
+  margin-top: 150px;
+}
 .parallax{
+  display: none;
   z-index: -1;
   background-image: url('../img/pattern2.png');
   text-align: center;
@@ -129,6 +148,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (min-width: 480px ){
+    display: block;
     height: 450px;
   }
 }
