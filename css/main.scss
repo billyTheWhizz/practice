@@ -15,6 +15,9 @@ $nav-background-color: white;
   }
 
 }
+a, a:active, a:focus{
+    outline: none;
+}
 a {
   text-decoration: none;
 }
