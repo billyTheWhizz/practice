@@ -8,6 +8,10 @@
     *[id]:before {
       margin-top: -130px;
       height: 130px; } }
+      
+*:focus {
+      outline: none;
+}
 
 a {
   text-decoration: none; }

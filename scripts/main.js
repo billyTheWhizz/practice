@@ -1,4 +1,7 @@
+!function(){
 //scrolling
+
+
 $(".links li:nth-child(1) a").css("background-color","#DCDCDC");
 var array = []
 
@@ -77,3 +80,4 @@ $overlay.click(function(){
   $overlay.hide();
   $("body").removeClass("no-scroll");
 });
+}()
