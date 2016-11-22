@@ -1,8 +1,7 @@
 !function(){
 //scrolling
 
-
-$(".links li:nth-child(1) a").css("background-color","#DCDCDC");
+$(".links li:nth-child(1) a").css("color","black");
 var array = []
 
 function recordPositions(){
@@ -20,12 +19,13 @@ $(window).resize(function(){
 })
 
 
+
 $(window).scroll(function(){
   var scrollTop = $(this).scrollTop();
   for(var i=0; i < array.length; i++){
     if (array[i] < scrollTop && scrollTop < (array[i+1])){
-      $(".links li a").css("background-color", "white");
-      $(".links li:nth-child(" + (i + 1) + ") a").css("background-color","#DCDCDC");
+      $(".links li a").css("color", "#A9A9A9");
+      $(".links li:nth-child(" + (i + 1) + ") a").css("color","black");
     };
   };
 });
